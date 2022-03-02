@@ -90,7 +90,6 @@
 .device
 {
     background-repeat: no-repeat;
-    
     background-size: cover;
     height:100vh; 
 }
@@ -325,9 +324,11 @@
   
 }
 @media screen and (max-width: 776px) {
+  
     .cards {
       flex:100%;
       flex-wrap: wrap;
+      justify-content: center;
     }
     .Box
     {
@@ -365,10 +366,37 @@
     {
         margin:0 10px;
     }
+    .vision
+    {
+       font-size: 30px;
+    }
+    .vision2
+    {
+        font-weight: bold;
+        font-size: 28px;
+    }
+    .attitude
+    {
+        padding:0 10px;
+    }
 }
 
-@media screen and (max-width: 980px) 
+@media screen and (max-width: 1020px) 
 {
+    /* background 1 text(vision1 and vision2) */
+    .vision
+    {
+        font-size: 28px;
+    }
+    .vision2
+    {
+        font-size: 28px;
+    }
+    .cards {
+        /* flex:100%; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .options
     {
         flex:100%;
@@ -378,5 +406,11 @@
     .one
     {
         width:50%;
+    }
+    .device
+    {
+        background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
     }
 }
